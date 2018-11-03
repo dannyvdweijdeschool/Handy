@@ -13,6 +13,12 @@ p h1{
 	margin: 0 auto;
 }
 
+.normaltext {
+	font-size: 17.5px;
+	line-height: 24px;
+	font-weight: 500;
+}
+
 #grid {
 	display: grid;
 	grid-template-rows: 60px 90px;
@@ -96,111 +102,12 @@ p h1{
 	z-index: 0;
 }
 
-#bannerfotos {
-	margin-bottom: 50px;
-	display: grid;
-	grid-template-columns: 300px 300px 300px;
-	column-gap: 20px;
-	margin-left: 25px;
-	margin-top: 5px;
-}
-
-#banner1 {
-	grid-column-start: 1;
-	grid-column-end: 1;
-}
-
-.banner1blind {
-	background-color: rgba(34,41,49,0.8);
-	width: 300px;
-	height: 220px;
-	position: absolute;
-	display: block;
-	bottom: -114px;
-	opacity: 0;
-	transition: 0.5s;
-}
-
-#banner1div:hover .banner1blind {
-	opacity: 1;
-}
-
-#banner1blindtext {
-	position: absolute;
-	color: white;
-	text-decoration: none;
-	font-size: 32px;
-	left: 30px;
-	top: 90px;
-	font-weight: 500;
-} 
-
-#banner2 {
-	grid-column-start: 2;
-	grid-column-end: 2;
-}
-
-
-.banner2blind {
-	background-color: rgba(34,41,49,0.8);
-	width: 300px;
-	height: 220px;
-	position: absolute;
-	display: block;
-	bottom: -114px;
-	opacity: 0;
-	transition: 0.5s;
-}
-
-#banner2div:hover .banner2blind {
-	opacity: 1;
-}
-
-#banner2blindtext {
-	position: absolute;
-	color: white;
-	text-decoration: none;
-	font-size: 32px;
-	left: 100px;
-	top: 90px;
-	font-weight: 500;	
-} 
-
-#banner3 {
-	grid-column-start: 3;
-	grid-column-end: 3;
-}
-
-.banner3blind {
-	background-color: rgba(34,41,49,0.8);
-	width: 300px;
-	height: 220px;
-	position: absolute;
-	display: block;
-	bottom: -114px;
-	opacity: 0;
-	transition: 0.5s;
-}
-
-#banner3div:hover .banner3blind {
-	opacity: 1;
-}
-
-#banner3blindtext {
-	position: absolute;
-	color: white;
-	text-decoration: none;
-	font-size: 32px;
-	left: 70px;
-	top: 90px;
-	font-weight: 500;	
-} 
-
 #yellowbar {
 	background-color: #ffe718;
 	display: grid;
 	grid-template-columns: 655px 130px;
-	grid-template-rows: auto; 
+	grid-template-rows: auto;
+	margin-top: 60px; 
 }
 
 #yellowbarbigletters {
@@ -395,14 +302,14 @@ p h1{
 	color: #aeb6be; 
 	position: absolute;
 	font-size: 25px;
-	top: 1560px;
+	top: 1728px;
 }
 
 #mobile {
 	color: #aeb6be; 
 	position: absolute;
 	font-size: 25px;
-	top: 1605px;
+	top: 1778px;
 	margin-left: 2px;	
 }
 
@@ -410,7 +317,7 @@ p h1{
 	color: #aeb6be; 
 	position: absolute;
 	font-size: 25px;
-	top: 1650px;	
+	top: 1822px;	
 	right: 572px;
 }
 
@@ -423,3 +330,73 @@ p h1{
 	color: white;
 	margin-left: 1010px;
 }
+
+#page {
+	font-size: 14px;
+	margin-bottom: 45px;
+	margin-left: 2px;
+}
+
+#nieuwbouw {
+	color: #ffe718;
+}
+
+#nieuwbouwtext {
+	position: absolute;
+	left: 888px;
+	display: none;
+	color: white;
+	background-color: #aeb6be;
+	width: 260px;
+	height: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px; 
+}
+
+#nieuwbouw:hover #nieuwbouwtext {
+	display: block
+}
+
+#advies {
+	color: #ffe718;	
+}
+
+#adviestext {
+	position: absolute;
+	left: 443px;
+	display: none;
+	color: white;
+	background-color: #aeb6be;
+	width: 261px;
+	height: 78px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px; 
+}
+
+#advies:hover #adviestext {
+	display: block
+}
+
+#regelgeving {
+	color: #ffe718;	
+}
+
+#regelgevingtext {
+	position: absolute;
+	left: 1061px;
+	display: none;
+	color: white;
+	background-color: #aeb6be;
+	width: 260px;
+	height: 76px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px; 
+}
+
+#regelgeving:hover #regelgevingtext {
+	display: block
+}
+
